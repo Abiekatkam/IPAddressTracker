@@ -2,6 +2,10 @@
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
+## To View this output
+
+[Click here](https://abiekatkam.github.io/IPAddressTracker/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
