@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker | Abie Katkam</title>
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Leaflet script -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="content d-flex flex-column">
+      <section class="banner">
+        <h1>IP Address Tracker</h1>
+        <form class="form">
+          <input
+            type="text"
+            name="search"
+            id="SearchBar"
+            class="search"
+            placeholder="Search for any IP address or domain"
+          />
+          <input type="submit" value="" class="submit" />
+        </form>
+        <section class="displayer">
+          <div class="col-lg-3 meta">
+            <p class="para">ip address</p>
+            <p id="value1" class="data"></p>
+          </div>
+          <div class="col-lg-3 meta">
+            <p class="para">location</p>
+            <p id="value2" class="data"></p>
+          </div>
+          <div class="col-lg-3 meta">
+            <p class="para">timezone</p>
+            <p id="value3" class="data"></p>
+          </div>
+          <div class="col-lg-3 meta border-0">
+            <p class="para">isp</p>
+            <p id="value4" class="data"></p>
+          </div>
+        </section>
+      </section>
+      <section class="mapdata" id="Map"></section>
+      <footer class="attribution" role="footer">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_self"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Abiekatkam">Abie Katkam</a>.
+      </footer>
+    </main>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
